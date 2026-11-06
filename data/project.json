@@ -1,0 +1,133 @@
+{
+  "formato": "audioguia-proyecto",
+  "version": 1,
+  "titulo": "Audioguías del curso",
+  "actualizado": "2026-11-06T12:00:00.000Z",
+  "ajustes": {
+    "urlPublica": "",
+    "tiles": {
+      "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "atribucion": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">colaboradores de OpenStreetMap</a>",
+      "maxZoom": 19
+    }
+  },
+  "spots": [
+    {
+      "id": "spot-ejemplo-1",
+      "titulo": "Spot ficticio A (ejemplo)",
+      "lat": -34.6084,
+      "lng": -58.3732,
+      "radioEntradaMetros": 25,
+      "radioSalidaMetros": 40,
+      "texto": "Bienvenida al recorrido de ejemplo. Acá iría el guion de la primera parada. El audio es sólo un tono de prueba de 6 segundos.\n\nAVISO: este es un punto FICTICIO de ejemplo para probar la app. Sus coordenadas no corresponden a una parada real de ninguna visita. Reemplazalo o borralo.",
+      "audio": {
+        "id": "ejemplo-audio-1",
+        "ext": "mp3",
+        "mime": "audio/mpeg",
+        "nombre": "tono-de-prueba-1.mp3",
+        "bytes": 36589
+      },
+      "imagen": null,
+      "habilitado": true,
+      "creado": "2026-11-06T12:00:00.000Z",
+      "actualizado": "2026-11-06T12:00:00.000Z"
+    },
+    {
+      "id": "spot-ejemplo-2",
+      "titulo": "Spot ficticio B (ejemplo)",
+      "lat": -34.6073,
+      "lng": -58.3718,
+      "radioEntradaMetros": 25,
+      "radioSalidaMetros": 40,
+      "texto": "Segunda parada de ejemplo. Probá salir más allá de 40 m y volver a entrar: el audio se puede activar de nuevo.\n\nAVISO: este es un punto FICTICIO de ejemplo para probar la app. Sus coordenadas no corresponden a una parada real de ninguna visita. Reemplazalo o borralo.",
+      "audio": {
+        "id": "ejemplo-audio-2",
+        "ext": "mp3",
+        "mime": "audio/mpeg",
+        "nombre": "tono-de-prueba-2.mp3",
+        "bytes": 36589
+      },
+      "imagen": null,
+      "habilitado": true,
+      "creado": "2026-11-06T12:00:00.000Z",
+      "actualizado": "2026-11-06T12:00:00.000Z"
+    },
+    {
+      "id": "spot-ejemplo-3",
+      "titulo": "Spot ficticio C (ejemplo)",
+      "lat": -34.6062,
+      "lng": -58.373,
+      "radioEntradaMetros": 25,
+      "radioSalidaMetros": 40,
+      "texto": "Tercera parada de ejemplo. Si llegás acá mientras suena otro audio, éste queda en espera.\n\nAVISO: este es un punto FICTICIO de ejemplo para probar la app. Sus coordenadas no corresponden a una parada real de ninguna visita. Reemplazalo o borralo.",
+      "audio": {
+        "id": "ejemplo-audio-3",
+        "ext": "mp3",
+        "mime": "audio/mpeg",
+        "nombre": "tono-de-prueba-3.mp3",
+        "bytes": 36589
+      },
+      "imagen": null,
+      "habilitado": true,
+      "creado": "2026-11-06T12:00:00.000Z",
+      "actualizado": "2026-11-06T12:00:00.000Z"
+    }
+  ],
+  "recorridos": [
+    {
+      "id": "rec-ejemplo",
+      "titulo": "Recorrido ejemplo",
+      "descripcion": "Recorrido de demostración con tres puntos FICTICIOS. No es una visita real: sirve para probar el GPS, el simulador y el audio.",
+      "trazado": [
+        [
+          -34.6089,
+          -58.3736
+        ],
+        [
+          -34.6084,
+          -58.3732
+        ],
+        [
+          -34.6078,
+          -58.3724
+        ],
+        [
+          -34.6073,
+          -58.3718
+        ],
+        [
+          -34.6067,
+          -58.3724
+        ],
+        [
+          -34.6062,
+          -58.373
+        ],
+        [
+          -34.6058,
+          -58.3734
+        ]
+      ],
+      "spotIds": [
+        "spot-ejemplo-1",
+        "spot-ejemplo-2",
+        "spot-ejemplo-3"
+      ],
+      "estado": "publicado",
+      "creado": "2026-11-06T12:00:00.000Z",
+      "actualizado": "2026-11-06T12:00:00.000Z"
+    }
+  ],
+  "cursos": [
+    {
+      "id": "curso-ejemplo",
+      "nombre": "Curso ejemplo",
+      "enlaceId": "curso-ejemplo",
+      "recorridoIds": [
+        "rec-ejemplo"
+      ],
+      "creado": "2026-11-06T12:00:00.000Z",
+      "actualizado": "2026-11-06T12:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Administración · Audioguía</title>
+  <meta name="theme-color" content="#1f5f4a">
+  <meta name="robots" content="noindex">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="admin">
+  <a class="saltar" href="#panel">Saltar al panel</a>
+  <header class="barra">
+    <h1 class="marca">Audioguías · Administración</h1>
+    <nav class="pestanas" role="tablist" aria-label="Secciones">
+      <button role="tab" data-tab="spots" id="tab-spots" aria-controls="panel">Spots</button>
+      <button role="tab" data-tab="recorridos" id="tab-recorridos" aria-controls="panel">Recorridos</button>
+      <button role="tab" data-tab="cursos" id="tab-cursos" aria-controls="panel">Cursos</button>
+      <button role="tab" data-tab="simulador" id="tab-simulador" aria-controls="panel">Simulador GPS</button>
+      <button role="tab" data-tab="proyecto" id="tab-proyecto" aria-controls="panel">Proyecto</button>
+    </nav>
+    <span id="estadoGuardado" class="pastilla" role="status" aria-live="polite"></span>
+    <a class="btn btn-chico" href="./?fuente=local" target="_blank" rel="noopener">Vista estudiante (local)</a>
+  </header>
+  <div class="admin-layout">
+    <div class="mapa-wrap">
+      <div id="mapa" role="region" aria-label="Mapa de edición"></div>
+      <div id="pistaMapa" class="pista-mapa" aria-live="polite" hidden></div>
+      <div id="insigniaSim" class="insignia-sim" hidden>SIMULACIÓN — no es tu GPS real</div>
+    </div>
+    <section id="panel" class="panel" role="tabpanel" tabindex="-1"><p class="cargando">Cargando…</p></section>
+  </div>
+  <div id="toasts"></div>
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="vendor/qrcode/qrcode.js"></script>
+  <script src="files-list.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

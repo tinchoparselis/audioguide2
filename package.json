@@ -1,0 +1,13 @@
+{
+  "name": "audioguia-geolocalizada",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PWA estática de audioguías geolocalizadas (sin servidor, sin servicios pagos).",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node --test tests/unit.test.mjs",
+    "e2e": "node tests/e2e.mjs"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Audioguía</title>
+  <meta name="description" content="Audioguías geolocalizadas para recorridos al aire libre.">
+  <meta name="theme-color" content="#1f5f4a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="estudiante">
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+  <header class="barra">
+    <h1 class="marca" id="tituloApp">Audioguía</h1>
+    <span id="estadoRed" class="pastilla" aria-live="polite"></span>
+  </header>
+  <div id="bannerLocal" class="banner banner-aviso" hidden>Vista previa local: estás viendo los datos guardados en este navegador (sin publicar).</div>
+  <main id="principal" tabindex="-1">
+    <section id="pantalla" aria-live="polite"><p class="cargando">Cargando…</p></section>
+  </main>
+  <dialog id="dlgSpot" aria-labelledby="dlgSpotTitulo">
+    <div class="dlg-cuerpo">
+      <div class="dlg-cabecera">
+        <h2 id="dlgSpotTitulo"></h2>
+        <button type="button" class="btn" id="dlgCerrar" aria-label="Cerrar">✕</button>
+      </div>
+      <div id="dlgSpotContenido"></div>
+    </div>
+  </dialog>
+  <div id="toasts"></div>
+  <noscript><p class="banner banner-error">Esta app necesita JavaScript activado.</p></noscript>
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script type="module" src="js/estudiante.js"></script>
+</body>
+</html>
